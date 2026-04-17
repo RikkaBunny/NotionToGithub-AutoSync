@@ -1,0 +1,37 @@
+{
+  "name": "notion-to-github-autosync",
+  "version": "1.1.0",
+  "type": "module",
+  "description": "Automatically sync Notion pages to a GitHub repository as Markdown + assets, using GitHub Actions.",
+  "keywords": [
+    "notion",
+    "github",
+    "markdown",
+    "sync",
+    "static-site",
+    "blog",
+    "github-actions",
+    "notion-api",
+    "automation"
+  ],
+  "homepage": "https://github.com/RikkaBunny/NotionToGithub-AutoSync#readme",
+  "bugs": {
+    "url": "https://github.com/RikkaBunny/NotionToGithub-AutoSync/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikkaBunny/NotionToGithub-AutoSync.git"
+  },
+  "license": "MIT",
+  "author": "RikkaBunny",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "sync": "node scripts/sync.mjs"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "notion-to-md": "^3.1.1"
+  }
+}
